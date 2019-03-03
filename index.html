@@ -12,7 +12,10 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="material.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script src="material.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -21,10 +24,219 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
+<h4>Type Scale</h4>
+<h1>I am a H1 heading</h1>
+<h2>I am a H2 heading</h2>
+<h3>I am a H3 heading</h3>
+<h4>I am a H4 heading</h4>
+<h5>I am a H5 heading</h5>
+<h6>I am a H6 heading</h6>
+<p>I am a P element </p><br>
+<a>I am an a element</a>
+<blockquote>I am a quote</blockquote>
+<br><br><br><br>
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <h4>Raised Buttons</h4>
+  <!-- Raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised">
+  Button
+</button>
+<!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+  Button
+</button>
+<!-- Raised disabled button -->
+<button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+  Button
+</button>
+<br><br>
+ <h4>Colored Raised Buttons</h4>
+<!-- Colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Button
+</button>
+<!-- Accent-colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+  Button
+</button>
+<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Button
+</button>
 
+<br><br>
+ <h4>Flat Buttons</h4>
+<!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Button
+</button>
+<!-- Flat button with ripple -->
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+  Button
+</button>
+<!-- Disabled flat button -->
+<button class="mdl-button mdl-js-button" disabled>
+  Button
+</button>
+
+<br><br>
+ <h4>Icon buttons</h4>
+
+<!-- Icon button -->
+<button class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">mood</i>
+</button>
+<!-- Colored icon button -->
+<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+  <i class="material-icons">mood</i>
+</button>
+
+<br><br>
+ <h4>Card</h4>
+
+
+
+
+<!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+  width: 400px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('https://images.unsplash.com/photo-1551458874-80de15b86ce1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>
+<div class="demo-card-wide mdl-card">
+  <div class="mdl-card__title">
+
+  </div>
+  <div class="mdl-card__supporting-text">
+    Help us capture and tag ducks for a science experiment<br>
+    <p>2 hour commitment</p>
+  </div>
+<br><br><br><br><br><br>
+</div>
+<br><br>
+ <h4>Main Card</h4>
+
+
+
+<!-- Square card -->
+<style>
+.demo-card-square.mdl-card {
+  width: 632px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('https://images.unsplash.com/photo-1550697851-920b181d8ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') bottom right 15% no-repeat #46B6AC;
+}
+</style>
+
+<div class="demo-card-square mdl-card">
+  <div class="mdl-card__title mdl-card--expand">
+  </div>
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <p>Aenan convallis.</p>
+  </div>
+
+</div>
+<br><br>
+ <h4>Chips</h4>
+<!-- Basic Chip -->
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Basic Chip</span>
+</span><!-- Deletable Chip -->
+<span class="mdl-chip mdl-chip--deletable">
+    <span class="mdl-chip__text">Deletable Chip</span>
+    <button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+</span><!-- Button Chip -->
+<button type="button" class="mdl-chip">
+    <span class="mdl-chip__text">Button Chip</span>
+</button>
+
+<br><br><br>
+ <h4>Dialog</h4>
+  <button id="show-dialog" type="button" class="mdl-button">Show Dialog</button>
+  <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Sign up?</h4>
+    <div class="mdl-dialog__content">
+      <p>
+        Sign up to start helping your community 😉
+      </p>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Agree</button>
+      <button type="button" class="mdl-button close">Disagree</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+<br><br><br>
+ <h4>Switch</h4>
+
+<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+  <span class="mdl-switch__label">energy defence matrix</span>
+</label>
+<br><br>
+<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+  <input type="checkbox" id="switch-2" class="mdl-switch__input">
+  <span class="mdl-switch__label">Server power</span>
+</label>
+<br><br><br>
+ <h4>Text input</h4>
+
+
+<!-- Simple Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Text...</label>
+  </div>
+</form>
+<!-- Numeric Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+    <label class="mdl-textfield__label" for="sample2">Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+<!-- Textfield with Floating Label -->
+
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3">
+    <label class="mdl-textfield__label" for="sample3">Text...</label>
+  </div>
+</form>
+<!-- Numeric Textfield with Floating Label -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+    <label class="mdl-textfield__label" for="sample4">Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
 </body>
 
 </html>

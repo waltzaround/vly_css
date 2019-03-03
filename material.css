@@ -824,7 +824,7 @@ main {
 /* Animations */
 /* Dialog */
 html, body {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px; }
@@ -857,6 +857,7 @@ h1 {
 h2 {
   font-family: "Inter", "Helvetica", "Arial", sans-serif;
   font-size: 45px;
+  letter-spacing: -0.03em;
   font-weight: 400;
   line-height: 48px;
   margin-top: 24px;
@@ -865,6 +866,7 @@ h2 {
 h3 {
   font-family: "Inter", "Helvetica", "Arial", sans-serif;
   font-size: 34px;
+  letter-spacing: -0.03em;
   font-weight: 400;
   line-height: 40px;
   margin-top: 24px;
@@ -875,6 +877,7 @@ h4 {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
+  letter-spacing: -0.02em;  
   -moz-osx-font-smoothing: grayscale;
   margin-top: 24px;
   margin-bottom: 16px; }
@@ -884,7 +887,7 @@ h5 {
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   margin-top: 24px;
   margin-bottom: 16px; }
 
@@ -893,7 +896,7 @@ h6 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.02em;
   margin-top: 24px;
   margin-bottom: 16px; }
 
@@ -915,7 +918,7 @@ blockquote {
   font-weight: 300;
   font-style: italic;
   line-height: 1.35;
-  letter-spacing: 0.08em; }
+  letter-spacing: -0.02em; }
   blockquote:before {
     position: absolute;
     left: -0.5em;
@@ -3864,7 +3867,7 @@ ul, ol {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  line-height: 50px;
+  line-height: 32px;
   vertical-align: middle; }
   .mdl-button::-moz-focus-inner {
     border: 0; }
@@ -4269,13 +4272,15 @@ input.mdl-button[type="submit"] {
   margin: 0; }
 
 .mdl-card__supporting-text {
-  color: rgba(0,0,0, 0.54);
+  color: #000;
   font-size: 1rem;
-  line-height: 18px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
   overflow: hidden;
   font-weight: bold;
   padding: 4px 0px 0px 0px;
-  width: 90%; }
+  width: 100%; }
+
   .mdl-card__supporting-text.mdl-card--border {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
@@ -4804,6 +4809,7 @@ input.mdl-button[type="submit"] {
   white-space: nowrap; }
   .mdl-chip__text {
     font-size: 13px;
+    font-weight: bold;
     vertical-align: middle;
     display: inline-block; }
   .mdl-chip__action {
@@ -5305,11 +5311,12 @@ input.mdl-button[type="submit"] {
 .mdl-dialog {
   border: none;
   box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
-  width: 280px; }
+  border-radius: 8px;
+  padding: 16px;
+  width: 30rem; }
   .mdl-dialog__title {
-    padding: 24px 24px 0;
     margin: 0;
-    font-size: 2.5rem; }
+    font-size: 1.5rem; }
   .mdl-dialog__actions {
     padding: 8px 8px 8px 24px;
     display: -webkit-flex;
@@ -5337,8 +5344,8 @@ input.mdl-button[type="submit"] {
         margin-right: 0;
         text-align: right; }
   .mdl-dialog__content {
-    padding: 20px 24px 24px 24px;
-    color: rgba(0,0,0, 0.54); }
+    padding: 20px 0px 24px 0px;
+    color: #333; }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -10231,7 +10238,6 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   color: rgb(213,0,0);
   position: absolute;
   font-size: 16px;
-  font-weight:bold;
   margin-top: 8px;
   visibility: hidden;
   display: block; }
